@@ -104,7 +104,7 @@ if st.button("レシピを考えてくださいお願いします", use_containe
             
             #Geminiに質問を投げる
             response = client.models.generate_content(
-                model='gemini-2.5-flash', #最新のやつ
+                model='gemini-3.5-flash', #最新のやつ
                 contents=contents
             )
 
