@@ -61,7 +61,7 @@ if st.button("レシピを考えてくださいお願いします", use_containe
 
         try:
             #パソコンに保存したAPIキーを使ってgeminiを準備
-            client = genai.Client()
+            client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
             #選択されたチェックボックスを文章にまとめる処理
             selected_moods = []
@@ -104,7 +104,7 @@ if st.button("レシピを考えてくださいお願いします", use_containe
             
             #Geminiに質問を投げる
             response = client.models.generate_content(
-                model='gemini-2.5-flash', #最新のやつ
+                model='gemini-2.0-flash', #最新のやつ
                 contents=contents
             )
 
