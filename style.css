@@ -1,0 +1,31 @@
+
+/* 2. タイトルの文字を少し太く、おしゃれな色にする */
+h1 {
+    color: #1E3A8A !important;
+    font-weight: 800 !important;
+}
+
+/* .3 ボタンを親しみやすい色にして、角を丸くする */
+div.stButton > button {
+    background-color: rgba(15, 135, 255, 0.712) !important; 
+    color: rgb(255, 255, 255) !important;
+    border-radius: 8px !important;
+    border: none !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* .4 ボタンの上にマウスを載せたとき、ちょっと暗くして「押せる感」を出す　*/
+div.stButton > button:hover {
+    background-color: #059669 !important;
+    color: white !important;
+}
+
+/* .5 ラジオボタンの枠を白くして立体感を出す */
+div[data-testid="stRadio"] {
+    background-color: rgba(235, 232, 232, 0.785);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
